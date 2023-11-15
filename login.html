@@ -155,36 +155,42 @@
         <div class="shape"></div>
         <div class="shape"></div>
     </div>
-    <form>
-        <h3>Login Here</h3>
-
+    <!-- Update your form tag in login.html -->
+    <form id="loginForm" accept-charset="UTF-8">
         <label for="username">Username</label>
         <input type="text" placeholder="Username" id="username">
 
         <label for="password">Password</label>
         <input type="password" placeholder="Password" id="password">
 
-        <button onclick="login()">Log In</button>
-        </div>
+        <button type="button" onclick="login(event)">Log In</button>
     </form>
 
+
+
     <script>
-        function login() {
+        function login(event) {
+            event.preventDefault(); // Prevent the default form submission behavior
+    
             const enteredUsername = document.getElementById("username").value;
             const enteredPassword = document.getElementById("password").value;
-
+    
             // Hardcoded user credentials
             const hardcodedUsername = "tinygerm";
             const hardcodedPassword = "germsblog123";
-
+    
             if (enteredUsername === hardcodedUsername && enteredPassword === hardcodedPassword) {
                 alert("Login successful!");
-                // Redirect to the protected page or perform additional actions here
+                // Redirect to the "submit blog.html" page
+                window.location.href = "submit blog.html";
             } else {
                 alert("Incorrect username or password");
             }
         }
     </script>
+    
+    
+    
 </body>
 
 </html>
