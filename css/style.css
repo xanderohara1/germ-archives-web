@@ -318,29 +318,29 @@ p {
 }
 
 .navStyle ul li a:hover {
-    color: #ED5441;
+    color: #9c7c5e;
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #ED5441;
+    color: #9c7c5e;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #CA133A;
+    color: #9c7c5e;
     background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #CB143B;
+    color: #28573d;
     background-color: transparent;
 }
 
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
-    color: #ED5441;
+    color: #9c7c5e;
     background-color: transparent;
 }
 
@@ -360,10 +360,10 @@ p {
 ---------------------------------*/
 
 .top_cont_outer {
-    background: #ED5441;
+    background: #9c7c5e;
     position: relative;
 	
-    background: #CE1139;
+    background: #9c7c5e;
 	height:650px;
 }
 
@@ -454,8 +454,8 @@ a.read_more2:hover, a.read_more:hover {
 }
 a.read_more:hover {
     background: #fff;
-    color: #ED5441;
-    border: 1px solid #ED5441;
+    color: #9c7c5e;
+    border: 1px solid #9c7c5e;
 }
 
 	
@@ -471,7 +471,7 @@ a.read_more:hover {
 
 #service {
     padding: 60px 0px;
-    background: #CE1139;
+    background: #9c7c5e;
 }
 #service h2{
   color: #fff;
@@ -607,18 +607,18 @@ a.contact_btn {
     text-align: center;
     line-height: 49px;
     font-size: 16px;
-    color: #ED5441;
+    color: #9c7c5e;
     border-radius: 3px;
     font-family: 'Raleway', sans-serif;
     font-weight: 600;
-    border: 2px solid #ED5441;
+    border: 2px solid #9c7c5e;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
 }
 
 a.contact_btn:hover {
-    background: #ED5441;
+    background: #9c7c5e;
     color: #fff;
 }
 
@@ -663,7 +663,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a:hover {
-    background: #ED5441;
+    background: #9c7c5e;
     color: #fff;
     text-decoration: none;
 }
@@ -693,7 +693,7 @@ a.contact_btn:hover {
 }
 
 .Portfolio-nav li a.current {
-    background: #ED5441;
+    background: #9c7c5e;
     color: #fff;
     text-decoration: none;
 }
@@ -783,7 +783,7 @@ img {
 
 
 .client_logos {
-    background: #CE1139;
+    background: #9c7c5e;
     padding: 60px 0;
     margin-top: 60px;
 }
@@ -823,7 +823,7 @@ background-size: auto 100%;
 background-position-y: 70px;
 }
 #about-us .read-more{
-	border: 1px solid #ED5441;
+	border: 1px solid #9c7c5e;
 	color: #1a1a1a;
 }
 
@@ -871,7 +871,7 @@ background-position-y: 70px;
 	position: absolute;
 	font-family: FontAwesome;
 	font-size: 1.125em;
-	color: #CE1139;
+	color: #9c7c5e;
 	left: 0px;
 	top: 3px;
 }
@@ -1015,12 +1015,12 @@ border-radius: 100%;
 font-size: 15px;
 line-height: 30px;
 outline: 0;
-color: #CE1139;
+color: #9c7c5e;
 background-color: #fff;
 -webkit-transition: all .3s;
 -moz-transition: all .3s;
 transition: all .3s;
-border: 1px solid #CE1139;
+border: 1px solid #9c7c5e;
 }
 #aboutUs {
     padding: 60px 0;
@@ -1056,7 +1056,7 @@ border: 1px solid #CE1139;
 }
 
 .contact_block_icon.icon2 {
-    border-color: #ED5441;
+    border-color: #9c7c5e;
 }
 
 .contact_block_icon.icon3 {
@@ -1073,11 +1073,11 @@ border: 1px solid #CE1139;
 }
 
 .contact_block_icon.icon2 {
-    border-color: #ED5441;
+    border-color: #9c7c5e;
 }
 
 .contact_block_icon.icon2 span {
-    background: #ED5441;
+    background: #9c7c5e;
 }
 
 .contact_block_icon.icon3 {
@@ -1215,7 +1215,7 @@ border: 1px solid #CE1139;
     width: 175px;
     height: 50px;
     letter-spacing: 0px;
-    background: #CE1139;
+    background: #9c7c5e;
     border-radius: 3px;
     color: #ffffff;
     font-size: 16px;
@@ -1253,7 +1253,7 @@ border: 1px solid #CE1139;
 
 .footer_bottom span a {
     display: inline-block;
-    color: #CE1139;
+    color: #9c7c5e;
     font-size: 16px;
     transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
@@ -1372,10 +1372,10 @@ border: 1px solid #CE1139;
 }
 
 #filters ul li a:hover h5, #filters ul li a.active h5 {
-    background: #CE1139;
+    background: #9c7c5e;
     color: #FFFFFF;
     text-decoration: none;
-    border: #CE1139 solid 1px;
+    border: #9c7c5e solid 1px;
 }
 
 .section-title h2 {
@@ -1960,7 +1960,7 @@ font-size: 30px;
 padding: 60px 0 50px;
 } 
 .navbar-inverse .navbar-toggle .icon-bar{
-background:#ED5441;
+background:#9c7c5e;
 }
 .navbar-inverse .navbar-toggle {
 border-color: transparent;
