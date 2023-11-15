@@ -15,9 +15,6 @@ app.use(express.json());
 // Use the express.static() middleware to serve the static files in the 'public' folder
 app.use(express.static('public'));
 
-// Set the view engine to ejs
-app.set('view engine', 'ejs');
-
 // SQLite Database
 const db = new sqlite3.Database('blog.db');
 
@@ -56,7 +53,7 @@ app.post('/submit', (req, res) => {
     });
 });
 
-// GET /view-posts - Retrieve all the blog posts from the database and render them
+// GET /view-posts - Retrieve all the blog posts from the database and send as JSON
 app.get('/view-posts', (req, res) => {
     // Query all the blog posts from the database
     db.all('SELECT * FROM blog_posts', (err, rows) => {
@@ -65,8 +62,8 @@ app.get('/view-posts', (req, res) => {
             return res.status(500).json({ message: 'Error retrieving blog posts' });
         }
 
-        // Render the view-posts.ejs file with the blog posts data
-        res.render('view-posts', { blog_posts: rows });
+        // Send the blog posts data as JSON
+        res.json({ blog_posts: rows });
     });
 });
 

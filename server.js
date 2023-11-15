@@ -1,31 +1,34 @@
 const express = require('express');
-const cors = require('cors');
-const apiRoutes = require('./api');
-const db = require('./database');
-const multer = require('multer');
+const http = require('http');
+const path = require('path');
+const csp = require('express-csp-header');
+const { createProxyMiddleware } = require('http-proxy-middleware');
 
 const app = express();
 const PORT = process.env.PORT || 5500;
 
-// Set up multer for handling file uploads
-const storage = multer.memoryStorage();
-const upload = multer({ storage: storage });
+// Serve static files using express.static
+app.use(express.static(path.join(__dirname, 'germ-archive-web')));
 
-app.use(cors()); // Enable CORS
+// Set up reverse proxy for PHP
+app.use(
+  createProxyMiddleware('**/*.php', {
+    target: 'http://127.0.0.1:3000', // Adjusted port for PHP server
+    changeOrigin: true,
+  })
+);
 
-app.use(express.static('germ-archive-web'));
-
-app.use(express.json());
-app.use('/api', apiRoutes);
-
-// ... other routes and middleware ...
+// Use express-csp-header middleware
+app.use(csp({
+  policies: {
+    'default-src': [csp.NONE],
+    'img-src': [csp.SELF],
+  }
+}));
 
 // Start the server
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+const server = http.createServer(app);
 
-// Close the database connection when the app exits
-process.on('exit', () => {
-  db.close();
+server.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
