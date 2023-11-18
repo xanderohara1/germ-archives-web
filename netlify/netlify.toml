@@ -1,6 +1,10 @@
 # netlify.toml
 
 [build]
-  # The directory where Netlify can find your compiled functions to deploy them.
-  # Defaults to netlify/functions if not set.
-  functions = "netlify/functions"
+  command = "npm run build"  # Replace with your build command
+  publish = "dist"           # Replace with your build output directory
+
+[[redirects]]
+  from = "netlify\sign-in.html"
+  to = "netlify\make-blog.html"
+  status = 301
