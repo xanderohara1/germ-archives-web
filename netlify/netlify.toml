@@ -1,0 +1,6 @@
+# netlify.toml
+
+[build]
+  # The directory where Netlify can find your compiled functions to deploy them.
+  # Defaults to netlify/functions if not set.
+  functions = "netlify/functions"
