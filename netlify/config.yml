@@ -3,7 +3,7 @@ backend:
   repo: xanderohara1/germ-archives-web
   branch: main  # or the branch you want to use
   use_open_authoring: true
-  auth_callback: netlify-cms-blogs\admin\signed-in-woo.html
+  auth_callback: netlify\make-blog.html
   app_id: 40c4f7199211411ae00c
   base_url: https://api.netlify.com
 
