@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Include the Netlify CMS script -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <!-- Initialize Netlify CMS with the configuration file -->
+    <script src="https://api.netlify.com/js/client.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "netlify-cms-blogs\admin\index.html";
+            });
+          }
+        });
+      }
+
+      CMS.init({ config: { load_config_file: false, backend: { name: "github", repo: "xanderohara1/germ-archives-web" } } });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+backend:
+  name: github
+  repo: xanderohara1/germ-archives-web
+  branch: main  # or the branch you want to use
+  use_open_authoring: true
+  auth_callback: netlify-cms-blogs\admin\signed-in-woo.html
+  app_id: 40c4f7199211411ae00c
+  base_url: https://api.netlify.com
+
+
+media_folder: netlify-cms-blogs\media
+public_folder: netlify-cms-blogs\public
+
+collections:
+  - name: "blogs"
+    label: "Blogs"
+    folder: "netlify-cms-blogs\blogs"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { name: "title", label: "Title" }
+      - { name: "date", label: "Date", widget: "date" }
+      - { name: "featured_image", label: "Featured Image", widget: "image" }
+      - { name: "body", label: "Body", widget: "markdown" }
